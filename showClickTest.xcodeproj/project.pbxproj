@@ -280,6 +280,8 @@
 		18CEB9431926DF8C00765FAF /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CEB9421926DF8C00765FAF /* libwebsockets.a */; };
 		18CEB9491926DF8C00765FAF /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18CEB9481926DF8C00765FAF /* AppDelegate.cpp */; };
 		18CEB94C1926DF8C00765FAF /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18CEB94B1926DF8C00765FAF /* HelloWorldScene.cpp */; };
+		18CEB9541926E13A00765FAF /* showClick.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB9521926E13A00765FAF /* showClick.png */; };
+		18CEB9551926E13A00765FAF /* showClick.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB9531926E13A00765FAF /* showClick.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +875,8 @@
 		18CEB9481926DF8C00765FAF /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		18CEB94A1926DF8C00765FAF /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		18CEB94B1926DF8C00765FAF /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		18CEB9521926E13A00765FAF /* showClick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showClick.png; sourceTree = "<group>"; };
+		18CEB9531926E13A00765FAF /* showClick.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = showClick.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2093,6 +2097,8 @@
 		18CEB9461926DF8C00765FAF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18CEB9521926E13A00765FAF /* showClick.png */,
+				18CEB9531926E13A00765FAF /* showClick.plist */,
 				18CEB9471926DF8C00765FAF /* AppDelegate.h */,
 				18CEB9481926DF8C00765FAF /* AppDelegate.cpp */,
 				18CEB94A1926DF8C00765FAF /* HelloWorldScene.h */,
@@ -2152,12 +2158,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CEB5C81926DF8900765FAF /* Icon.png in Resources */,
+				18CEB9541926E13A00765FAF /* showClick.png in Resources */,
 				18CEB66B1926DF8A00765FAF /* ChangeLog in Resources */,
 				18CEB5B81926DF8900765FAF /* CloseNormal.png in Resources */,
 				18CEB5C41926DF8900765FAF /* Icon-Small.png in Resources */,
 				18CEB5C01926DF8900765FAF /* Icon-72.png in Resources */,
 				18CEB5BE1926DF8900765FAF /* HelloWorld.png in Resources */,
 				18CEB5C21926DF8900765FAF /* Icon-Small-50.png in Resources */,
+				18CEB9551926E13A00765FAF /* showClick.plist in Resources */,
 				18CEB5CC1926DF8900765FAF /* iTunesArtwork in Resources */,
 				18CEB5C61926DF8900765FAF /* Icon-Small@2x.png in Resources */,
 				18CEB5BC1926DF8900765FAF /* Default.png in Resources */,
@@ -2510,7 +2518,6 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
-					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"showClickTest/libs/Chipmunk/include/chipmunk\"";
@@ -2536,7 +2543,6 @@
 					"-lxml2",
 					"-lz",
 					"-lsqlite3",
-					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"showClickTest/libs/Chipmunk/include/chipmunk\"";

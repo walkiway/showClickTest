@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+using namespace cocos2d;
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -17,6 +18,15 @@ public:
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+    
+    //进入, 退出响应
+    virtual void onEnter();
+    virtual void onExit();
+    
+    //触屏逻辑函数
+    virtual void registerWithTouchDispatcher(void);
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
